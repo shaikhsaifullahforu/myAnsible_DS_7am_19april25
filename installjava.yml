@@ -1,0 +1,15 @@
+---
+- host: mywebservers
+  become: yes
+  tasks:
+  - name: i want to install java on ubuntu(apt-get install apache2)
+    apt:
+      name: "{{myubuntujavapack}}"
+      state: present   
+    when: ansible_os_family=="Debian"
+
+  - name: i want to install java  on redhat(service apache2 start)
+    dnf:
+      name: "{{myredhatjavapack}}"
+      state: started
+    when: ansible_os_family=="RedHat"
