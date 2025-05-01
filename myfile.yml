@@ -1,0 +1,5 @@
+---
+  - name: Create file
+    file:
+      path: /home/saif/myfirstfile
+      state: touch
