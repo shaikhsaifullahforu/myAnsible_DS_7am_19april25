@@ -1,5 +1,5 @@
 ---
-- host: mywebservers
+- hosts: mywebservers
   become: yes
   tasks:
   - name: i want to install java on ubuntu(apt-get install apache2)
