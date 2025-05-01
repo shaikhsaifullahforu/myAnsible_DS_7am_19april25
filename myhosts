@@ -7,7 +7,4 @@
 172.31.15.95
 
 
-[mywebservers:vars]
-var01=value
-myubuntuwebpack= apache2
-myredhatwebpack= httpd
+
