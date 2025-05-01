@@ -7,3 +7,8 @@
     apt:
       name: apache2
       state: present
+
+  - name: I want to create folder
+    file:
+      path: /home/saif/myfolder
+      state: directory
