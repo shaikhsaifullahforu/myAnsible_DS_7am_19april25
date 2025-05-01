@@ -5,3 +5,9 @@
 [mydummyserver]
 172.31.12.219
 172.31.15.95
+
+
+[mywebservers:vars]
+var01=value
+myubuntuwebpack= apache2222
+myredhatwebpack= httpd
