@@ -6,7 +6,7 @@
   - name: I want to install apache
     apt:
       name: apache2
-      state: present
+      state: absent
 
   - name: I want to create folder
     file:
