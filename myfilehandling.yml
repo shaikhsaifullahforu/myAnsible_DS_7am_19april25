@@ -4,7 +4,7 @@
   tasks:
   - include_tasks: myfile.yml
   - name: I want to install apache
-    apt:
+    service:
       name: apache2
       state: absent
 
