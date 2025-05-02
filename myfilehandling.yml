@@ -7,6 +7,11 @@
     apt:
       name: apache2
       state: present   
+
+  - name: i want to install apache2 server (apt-get install apache2)
+    service:
+      name: apache2
+      state: restarted 
       
   -   name: I want to create folder
       file:
