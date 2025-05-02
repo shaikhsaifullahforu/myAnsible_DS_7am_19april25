@@ -7,5 +7,9 @@
       file:
         path: /home/saif/myfolder
         state: directory
+  -   name: I want to copy file to folder
+      copy:
+        src: mytextfile
+        dest: /home/saif/myfolder/mytextfile
 
   
