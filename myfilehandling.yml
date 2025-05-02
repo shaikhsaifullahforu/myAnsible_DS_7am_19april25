@@ -6,11 +6,11 @@
   -   name: i want to install apache2 server (apt-get install apache2)
       apt:
         name: apache2
-        state: absent 
+        state: present 
 
   -   name: i want to start apache2 webserver (service apache2 start)
       service:
         name: apache2
-        state: stopped
+        state: started
 
   
