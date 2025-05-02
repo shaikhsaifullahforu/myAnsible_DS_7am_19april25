@@ -6,30 +6,11 @@
   -   name: i want to install apache2 server (apt-get install apache2)
       apt:
         name: apache2
-        state: present 
+        state: absent 
 
   -   name: i want to start apache2 webserver (service apache2 start)
       service:
         name: apache2
-        state: started
+        state: stopped
 
-  -   name: I want to create folder
-      file:
-        path: /home/saif/myfolder
-        state: directory
-
-  -   name: I want to copy file to folder
-      copy:
-        src: mytextfile
-        dest: /home/saif/myfolder/mytextfile
-
-  -   name: download any internt file
-      get_url:
-        url: https://updates.jenkins.io/download/war/2.508/jenkins.war
-        dest: /home/saif/myfolder/jenkins.war
-        force_basic_auth: yes
-
-  -   name: I want to copy index fileto host node
-      template:
-        src: myindex.j2
-        dest: /var/www/html/index.html       
+  
