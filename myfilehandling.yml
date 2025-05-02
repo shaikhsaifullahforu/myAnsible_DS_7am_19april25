@@ -6,7 +6,7 @@
   - name: I want to install apache
     service:
       name: apache2
-      state: stopped
+      state: started
 
   - name: I want to create folder
     file:
