@@ -2,3 +2,5 @@
 # tasks file for mytomcatrole
 - include_tasks: myjavainstall.yml
 - include_tasks: Download.yml
+- include_tasks: addusergroup.yml
+- include_tasks: permission.yml
