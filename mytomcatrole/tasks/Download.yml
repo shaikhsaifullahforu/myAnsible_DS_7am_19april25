@@ -1,0 +1,19 @@
+---
+- name: download tomcat tar file
+  get_url: 
+      url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.40/bin/apache-tomcat-10.1.40.tar.gz
+      dest: /home/saif/apache-tomcat-10.1.40.tar.gz
+      force_basic_auth: yes
+
+- name: create tomcat folder
+  file:
+    path: /opt/tomcat
+    state: directory
+
+- name: extract tomcat tar file in /opt/tomcat folder
+  command: 
+    cmd: sudo tar xzvf /home/saif/apache-tomcat-10.1.40.tar.gz -C /opt/tomcat --strip-components=1
+    creates: /opt/tomcat/LICENSE
+
+
+
